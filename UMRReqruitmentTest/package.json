@@ -1,0 +1,36 @@
+{
+  "author": {
+    "email": "assad@ael-bd.com",
+    "name": "assad"
+  },
+  "dependencies": {
+    "es6-shim": "^0.35.0"
+  },
+  "description": "UMRReqruitmentTest",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "remap-istanbul": "^0.6.4",
+    "typings": "^1.0.4",
+    "wdio-jasmine-framework": "^0.1.9",
+    "webdriverio": "^4.0.9",
+    "typescript": "^1.8.10"
+  },
+  "main": "app.js",
+  "name": "umrreqruitment-test",
+  "scripts": {
+    "postinstall": "typings install",
+    "del": "del \"test\\*.js\" \"test\\*.js.map\" /f /q /s",
+    "tsc": "tsc",
+    "build": "npm run del | npm run tsc",
+    "typings": "typings",
+    "wdio": "node_modules/.bin/wdio",
+    "selenium-server": "java -jar ../selenium-server-standalone-2.53.0.jar",
+    "server": "npm run selenium-server",
+    "start": "npm run build | npm run wdio"
+  },
+  "version": "0.0.0"
+}

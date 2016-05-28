@@ -3,9 +3,6 @@
     "email": "assad@ael-bd.com",
     "name": "assad"
   },
-  "dependencies": {
-    "es6-shim": "^0.35.0"
-  },
   "description": "UMRReqruitmentTest",
   "devDependencies": {
     "jasmine-core": "^2.4.1",
@@ -20,7 +17,6 @@
     "build": "npm run del | npm run tsc",
     "del": "del \"test\\*.js\" \"test\\*.js.map\" /f /q /s",
     "postinstall": "typings install",
-    "preinstall": "npm install karma-cli -g",
     "selenium-server": "java -jar ../selenium-server-standalone-2.53.0.jar",
     "server": "npm run selenium-server",
     "start": "npm run build | npm run wdio",

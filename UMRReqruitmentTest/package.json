@@ -24,7 +24,7 @@
   "scripts": {
     "postinstall": "typings install",
     "del": "del \"test\\*.js\" \"test\\*.js.map\" /f /q /s",
-    "tsc": "tsc",
+    "tsc": "node_modules/.bin/tsc",
     "build": "npm run del | npm run tsc",
     "typings": "typings",
     "wdio": "node_modules/.bin/wdio",
